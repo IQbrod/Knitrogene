@@ -8,7 +8,7 @@ exports.getDefault = function(req,res) {
             logger.error(err);
             res.sendStatus(500);
         } else {
-            res.status(200).send("rows");
+            res.status(200).send(rows);
         }
     });
 }
