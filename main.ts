@@ -7,14 +7,14 @@ const morgan = require('morgan');
 const app = express();;
 const port = 3200;
 
-//Define HTTP logs
+//Define logger
 app.use(morgan(':date :method :status :url :response-time ms', { stream: logger.stream }));
 
 //HTTP Request body parser
 app.use(bodyparser.urlencoded({extended: false}));
 
 // Define routes used by the server
-const default_route = require('./routes/default.js');
+const default_route = require('./routes/default.ts');
 app.use(default_route);
 
 // Start server
