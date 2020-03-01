@@ -1,5 +1,4 @@
 const conn = require('../util/database');
-const logger = require('../util/logger');
 
 exports.getDefault = function(req,res) {
     const query = "SELECT * FROM test;"
@@ -12,5 +11,3 @@ exports.getDefault = function(req,res) {
         }
     });
 }
-
-export {};
