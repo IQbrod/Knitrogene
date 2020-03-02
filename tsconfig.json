@@ -9,7 +9,7 @@
         "sourceMap": true,
         "outDir": "dist",
         "baseUrl": ".",
-        "types" : ["node", "express"],
+        "types" : ["node"],
         "paths": {
             "*": [
                 "node_modules/*"
